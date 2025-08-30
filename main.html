@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project: Resume</title>
+  <!-- These paths look correct but verify they exist in the same directory -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="code-background"></div>
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Floating Background Shapes -->
+  <div class="shapes">
+    <div class="shape square"   data-speed="1.2" style="top:12%; left:7%"></div>
+    <div class="shape triangle" data-speed="0.6" style="top:45%; left:85%"></div>
+    <div class="shape hexagon"  data-speed="0.9" style="top:72%; left:18%"></div>
+    <div class="shape square"   data-speed="0.4" style="top:20%; left:75%"></div>
+    <div class="shape triangle" data-speed="1.0" style="top:80%; left:60%"></div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+        <!-- ... other nav content ... -->
+        
+        <div class="nav-right">
+            <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </button>
+            
+            <!-- Menu button for mobile -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="#top" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Projects</span>
+                </a>
+            </li>
+            <li>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-paper-plane"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Hero -->
+  <header class="hero" id="top">
+    <div class="hero-content" data-aos="fade-up">
+        <!-- Centered Profile Image -->
+        <div class="hero-image-container">
+            <img src="img/image.png" alt="Profile Picture">
+            <!-- Add geometric shapes -->
+            <div class="geometric-shapes">
+                <div class="geometric-shape"></div>
+                <div class="geometric-shape"></div>
+                <div class="geometric-shape"></div>
+            </div>
+            <!-- Info Grid below image -->
+            <div class="info-grid centered">
+                <div><strong>Born:</strong> 04 Jan 2004</div>
+                <div><strong>Experience:</strong> 2+ Years</div>
+                <div><strong>Live in:</strong> Paranaque, PH</div>
+            </div>
+        </div>
+
+        <!-- Text content below -->
+        <div class="hero-text">
+            <h2 class="role">Computer Engineering Student</h2>
+            <h1 class="name">Tesado, Jaymar</h1>
+            <p class="bio">
+                I'm a Computer Engineering student from Parañaque.
+I enjoy coding, playing around with AI, and building cool projects.
+I’m also into tech, photography, and music.
+Outside of school, I love cycling because it lets me travel and explore new places.
+I also enjoy powerlifting—especially deadlifts—since it keeps me motivated and pushes me to do better.
+            </p>
+
+            <div class="social-links">
+                <a href="https://github.com/D4rkf13nd" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:tesadojaymar042004@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+639854876019"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Engineering student who loves building efficient, user-focused software.
+      I enjoy working across the stack — from embedded tinkering to modern web apps —
+      and I’m always exploring algorithms, data, and security.
+    </p>
+    <div class="info-grid">
+      <div><strong>Live in:</strong> Paranaque, Philippines</div>
+      <div><strong>Born:</strong> 04 January 2004</div>
+      <div><strong>Interests:</strong> Web, AI, IoT, Security</div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section reveal">
+    <h2>Education</h2>
+    <div class="education-container">
+        <div class="education-card">
+            <div class="edu-logo">
+                <img src="img/pup.png" alt="PUP Logo">
+            </div>
+            <div class="edu-header">
+
+                <h3>Polytechnic University of the Philippines</h3>
+            </div>
+            <div class="edu-content">
+                <p class="degree">Bachelor of Science in Computer Engineering</p>
+                <p class="year">2022 - Present</p>
+                <div class="edu-details">
+                    <p></i> Col. E. De Leon st. Wawa, Brgy. Sto. Niño, Parañaque City</p>
+                    <p></i> 4th Year</p>
+                    <p></i> Dean's Lister</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Programming</h3>
+            <ul>
+                <li>C / C++ / Java</li>
+                <li>Python (scripts, ML basics)</li>
+                <li>JavaScript (ES6+)</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Web</h3>
+            <ul>
+                <li>HTML5, CSS3, Responsive UI</li>
+                <li>React (basics), PHP</li>
+                <li>REST APIs, JSON</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Data & Tools</h3>
+            <ul>
+                <li>MySQL, MongoDB</li>
+                <li>Git/GitHub, Docker (basics)</li>
+                <li>VS Code</li>
+            </ul>
+        </div>
+        <div class="card">
+            <h3>Hardware</h3>
+            <ul>
+                <li>Arduino, Raspberry Pi</li>
+                <li>IoT sensors & protocols</li>
+                <li>Basic PCB & wiring</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Language Skills Section -->
+    <div class="language-skills">
+        <h2>Language Proficiency</h2>
+        <div class="skill-bars-container">
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>HTML <span class="badge">Web</span></span>
+                    <span class="percent">90% <i class="fas fa-certificate"></i></span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 90%; background:linear-gradient(45deg, #e34c26, #f9a826);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>CSS <span class="badge">Styling</span></span>
+                    <span class="percent">95% <i class="fas fa-star"></i></span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 95%; background:linear-gradient(45deg, #264de4, #4f8bf9);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>JavaScript <span class="badge">Frontend</span></span>
+                    <span class="percent">40% <i class="fas fa-code"></i></span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 40%; background: linear-gradient(45deg, #f0db4f, #f9a826);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>PHP</span>
+                    <span class="percent">40%</span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 40%; background: linear-gradient(45deg, #8d14ff, #780091);"></div>
+                </div>
+            </div>
+            
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>MySQL</span>
+                    <span class="percent">30%</span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 30%; background: linear-gradient(45deg, #00758f, #00606d);"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>C</span>
+                    <span class="percent">10%</span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 10%; background: linear-gradient(45deg, #283593, #1565C0);"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>C++</span>
+                    <span class="percent">30%</span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 30%; background: linear-gradient(45deg, #00549D, #004482);"></div>
+                </div>
+            </div>
+
+            <div class="skill-bar">
+                <div class="skill-info">
+                    <span>Python</span>
+                    <span class="percent">30%</span>
+                </div>
+                <div class="progress-line">
+                    <div class="progress" style="width: 30%; background: linear-gradient(45deg, #306998, #FFE873);"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Projects -->
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <article class="project">
+        <h3>Smart Home Automation</h3>
+        <p>IoT system using Arduino + sensors to automate lights/appliances with a web dashboard.</p>
+        <div class="tags"><span>Arduino</span><span>IoT</span><span>PHP</span></div>
+      </article>
+      <article class="project">
+        <h3>AI Intrusion Detection</h3>
+        <p>ML model for anomaly detection in network traffic; live alerts via a simple web UI.</p>
+        <div class="tags"><span>Python</span><span>Sklearn</span><span>Flask</span></div>
+      </article>
+      <article class="project">
+        <h3>Population Dashboard</h3>
+        <p>Analytics dashboard with charts and filters powered by PHP + MySQL.</p>
+        <div class="tags"><span>PHP</span><span>MySQL</span><span>Charts</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <p>Gmail: <a href="mailto:tesadojaymar042004@gmail.com">tesadojaymar042004@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/D4rkf13nd" target="_blank" rel="noopener">github.com/D4rkf13nd</a></p>
+    <p>Facebook: <a href="https://www.facebook.com/D4rkf13nd" target="_blank" rel="noopener">facebook.com/D4rkf13nd</a></p>
+  </section>
+
+  <footer class="footer">
+    <a href="#top" class="to-top" aria-label="Back to top">↑</a>
+    <p>© 2025 Tesado Jaymar</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 800,
+        once: true
+    });
+  </script>
+</body>
+</html>
