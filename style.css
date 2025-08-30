@@ -1,3 +1,13 @@
+/* Core Variables */
+:root {
+  --primary-color: #58a6ff;
+  --secondary-color: #f78166;
+  --bg-dark: #161b22;
+  --text-light: #ffffff;
+  --text-dark: #8b949e;
+  --spacing-base: 1rem;
+}
+
 /* Theme Variables */
 :root {
     --bg-primary: #ffffff;
@@ -1219,6 +1229,12 @@ section {
         0 4px 0 0 var(--accent),
         0 -4px 0 0 var(--accent);
 }
+ .section-reveal p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
 
 /* Pixelated social icons */
 .social-links a {
@@ -1272,4 +1288,42 @@ h1, h2, h3 {
 .name:hover {
     animation: glitch 1s infinite;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: var(--nav-bg);
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+    
+    .language-skills h2,
+    .edu-header h3 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+
+/* Update section reveal paragraphs */
+.section-reveal p,
+.section p {
+    color: #ffffff !important;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    text-align: center;
 }
